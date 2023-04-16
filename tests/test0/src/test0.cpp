@@ -65,7 +65,7 @@ public:
 
 int main()
 {
-  TestApplication app;
+  TestApplication app {};
   TestAdapter testAdapter {};
   app.mountHelloWorldAdapter(&testAdapter);
 
