@@ -1,7 +1,7 @@
 #ifndef __HEX_PORT_HPP__
 #define __HEX_PORT_HPP__
 
-namespace Hexagon
+namespace HexBase
 {
   class BasePort { };
 
@@ -13,8 +13,6 @@ namespace Hexagon
 
   public:
     inline Port() {};
-    // inline Port(T& module)
-    //   : module(module) { }
   };
 }
 

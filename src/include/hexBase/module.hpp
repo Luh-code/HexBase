@@ -1,7 +1,7 @@
 #ifndef __HEX_MODULE_HPP__
 #define __HEX_MODULE_HPP__
 
-namespace Hexagon
+namespace HexBase
 {
   class Module
   {

@@ -42,8 +42,8 @@ file(GLOB hexSrcFiles
   ${PROJECT_SOURCE_DIR}/src/**/*.cpp
 )
 
-add_library(libHex ${hexSrcFiles})
-set_target_properties(libHex PROPERTIES LINKER_LANGUAGE CXX)
+# add_library(libHex ${hexSrcFiles})
+# set_target_properties(libHex PROPERTIES LINKER_LANGUAGE CXX)
 
 enable_testing()
 add_subdirectory(${PROJECT_SOURCE_DIR}/tests)

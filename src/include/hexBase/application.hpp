@@ -4,7 +4,7 @@
 #include "adapter.hpp"
 #include <stdio.h>
 
-namespace Hexagon
+namespace HexBase
 {
   class Application
   {

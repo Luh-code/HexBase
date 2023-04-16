@@ -4,7 +4,7 @@
 #include <cstdint>
 #include "port.hpp"
 
-namespace Hexagon
+namespace HexBase
 {
   class BaseAdapter {};
 
