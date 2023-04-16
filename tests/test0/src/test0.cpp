@@ -43,7 +43,7 @@ void TestAdapter::helloWorld()
   port->module->helloWorld();
 }
 
-void TestAdapter::test(int* response)
+void TestAdapter::test(int32_t* response)
 {
   *response = 0;
 }
@@ -56,14 +56,9 @@ public:
   HelloWorldPort helloWorldPort {helloWorldModule};
 
 public:
-  inline void changeHelloWorldAdapter(HelloWorldAdapter* adapter)
+  inline void mountHelloWorldAdapter(HelloWorldAdapter* adapter)
   {
     evaluateAdapter(adapter, &helloWorldPort);
-  }
-
-  inline void helloWorld()
-  {
-    printf("%s\n", "Hello World from an adapter!");
   }
 };
 
@@ -72,7 +67,7 @@ int main()
 {
   TestApplication app;
   TestAdapter testAdapter {};
-  app.changeHelloWorldAdapter(&testAdapter);
+  app.mountHelloWorldAdapter(&testAdapter);
 
   testAdapter.helloWorld();
   return 0;
