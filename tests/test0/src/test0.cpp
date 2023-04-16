@@ -1,7 +1,7 @@
-#include "hexBase/adapter.hpp"
-#include "hexBase/application.hpp"
-#include "hexBase/module.hpp"
-#include "hexBase/port.hpp"
+#include "HexBase/adapter.hpp"
+#include "HexBase/application.hpp"
+#include "HexBase/module.hpp"
+#include "HexBase/port.hpp"
 #include <stdio.h>
 
 
