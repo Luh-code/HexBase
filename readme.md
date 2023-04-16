@@ -4,7 +4,7 @@ HexBase is a stripped-down, light-weight, header-only library, providing a frame
 HexBase is a reinterpretation of the hexagonal architecture, as is doesn't adhere to most of the standards the hexagonal architecture sets out.
 Separations like the driving and driven sides, or the UI and Infrastructure sides are gone.
 That means a port can either be driving, driven or even a combination of both.
-This does not mean, that separations like that are impossible to adhere do with HexBase.
+This does not mean, that separations like that are impossible to adhere to with HexBase.
 If this behavior is desired it just has to be adhered to internally inside of the application.
 And I recommend sticking to these separations to a point as well, as the order they bring to any application can be quite beneficial, but at the same time limiting.
 All in one you could say the idea behind HexBase is blurring the lines of the restrictive patterns and regulations in the hexagonal design philosophy, whilst keeping it's beneficial features intact.
