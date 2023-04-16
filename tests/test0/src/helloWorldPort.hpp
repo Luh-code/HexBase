@@ -1,7 +1,8 @@
 #ifndef __HEX_HELLO_WORLD_PORT_HPP
 #define __HEX_HELLO_WORLD_PORT_HPP
 
-#include "hexagon.hpp"
+#include "hexBase/module.hpp"
+#include "hexBase/port.hpp"
 #include "helloWorldModule.hpp"
 
 class HelloWorldPort : public Hexagon::Port<HelloWorldModule>

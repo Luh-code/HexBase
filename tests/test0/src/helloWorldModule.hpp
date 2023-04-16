@@ -1,7 +1,7 @@
 #ifndef __HEX_HELLO_WORLD_MODULE_CPP
 #define __HEX_HELLO_WORLD_MODULE_CPP
 
-#include "hexagon.hpp"
+#include "hexBase/module.hpp"
 #include <stdio.h>
 
 class HelloWorldModule : public Hexagon::Module

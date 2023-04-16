@@ -1,7 +1,7 @@
 #ifndef __HEX_TEST_ADAPTER_HPP__
 #define __HEX_TEST_ADAPTER_HPP__
 
-#include "hexagon.hpp"
+#include "hexBase/adapter.hpp"
 #include "helloWorldPort.hpp"
 #include <stdio.h>
 

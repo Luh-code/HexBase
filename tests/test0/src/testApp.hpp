@@ -1,7 +1,7 @@
 #ifndef __HEX_TEST_APP_HPP__
 #define __HEX_TEST_APP_HPP__
 
-#include "hexagon.hpp"
+#include "hexBase/application.hpp"
 #include "testAdapter.hpp"
 #include "helloWorldPort.hpp"
 
