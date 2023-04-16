@@ -1,15 +1,27 @@
 # HexBase
-HexBase is a stripped-down, light-weight, header-only library, providing a framework for applications following the Ports and Adapters design philosophy for agile software development.
-The difference between HexBase and other Implementations of Hexagonal software architecture is the replacement of domains with modules.
+HexBase is a stripped-down, light-weight, header-only library, providing a framework for applications following the ports and adapters design philosophy without limiting the developer's freedom with restrictive design patterns.
+
+HexBase is a reinterpretation of the hexagonal architecture, as is doesn't adhere to most of the standards the hexagonal architecture sets out.
+Separations like the driving and driven sides, or the UI and Infrastructure sides are gone.
+That means a port can either be driving, driven or even a combination of both.
+This does not mean, that separations like that are impossible to adhere do with HexBase.
+If this behavior is desired it just has to be adhered to internally inside of the application.
+And I recommend sticking to these separations to a point as well, as the order they bring to any application can be quite beneficial, but at the same time limiting.
+All in one you could say the idea behind HexBase is blurring the lines of the restrictive patterns and regulations in the hexagonal design philosophy, whilst keeping it's beneficial features intact.
+
+The goal of the original hexagonal architecture is making business applications more well structured and easier to maintain.
+In these applications the complexity most of the time does not come from the actual technology, but the infrastructure.
+In comparison HexBase is for programs, where the technology is the biggest hurdle, not the infrastructure.
+HexBase's goal is to give the developer freedom to do what they want, without the codebase becoming an unstructured mess.
 
 HexBase is written in C++ and comes with tests.
 
 ## INDEV
-HexBase is far from done and not all features are implemented yet.
+HexBase is far from done (I presume), and may experience large changes in the near future.
 
 ## How to use
 ### Disclaimer
-This documentation was shoe stringed together in about 10 mins, so it isn't very comprehensible. A better Version will be uploaded once all basic features are set.
+This documentation was shoe stringed together in about 10 mins, so it isn't very comprehensible, nor exhaustive. A better version will be uploaded once I figure out what needed to change.
 ### Example
 To Create a application following the ports and adapters architecture, first create a new class named TestApplication, which inherits from `HexBase::Application`:
 ```c++
@@ -96,7 +108,7 @@ void TestAdapter::test(int32_t* response)
 ```
 The value of the int32_t* response needs to be 0 by the time TestAdapter::test finishes.
 This function is called when mounting an adapter to a port via the application, and expects 0 for a successful check and evaluates everything else as an error.
-In our case TestAdapter will act as a API, which we later call in the main function:
+In our case TestAdapter will act as an API, which we later call in the main function:
 ```c++
 int main()
 {

@@ -48,6 +48,7 @@ void TestAdapter::test(int32_t* response)
   *response = 0;
 }
 
+
 class TestApplication : public HexBase::Application
 {
 public:
