@@ -3,3 +3,6 @@ HexBase is a stripped-down, light-weight, header-only library, providing a frame
 The difference between HexBase and other Implementations of Hexagonal software architecture is the replacement of domains with modules.
 
 HexBase is written in C++ and comes with tests.
+
+## INDEV
+HexBase is far from done and not all features are implemented yet.
