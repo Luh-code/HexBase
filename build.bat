@@ -1,6 +1,4 @@
 @echo off
-CALL ./setup.bat
-ECHO.
-ECHO.
 
+cmake -G "MinGW Makefiles" -B ./build -S .
 cmake --build ./build

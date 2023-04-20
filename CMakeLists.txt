@@ -19,6 +19,8 @@ MACRO_ENSURE_OUT_OF_SOURCE_BUILD(
 project(test VERSION 1.0 LANGUAGES C CXX)
 include(CTest)
 
+set(CMAKE_BUILD_TYPE Debug)
+
 set(CMAKE_C_COMILER "gcc-12.2")
 set(CMAKE_CXX_COMILER "g++-12.2")
 

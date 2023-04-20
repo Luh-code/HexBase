@@ -16,4 +16,4 @@ file(GLOB testSrcFiles
 
 add_executable(test0exec ${testSrcFiles})
 target_include_directories(test0exec PUBLIC ${PROJECT_SOURCE_DIR}/src/include)
-add_test(test0 ../bin/Debug/test0exec.exe)
+add_test(test0 ../bin/test0exec.exe)
